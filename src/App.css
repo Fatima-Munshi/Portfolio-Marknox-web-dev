@@ -1,0 +1,102 @@
+:root{
+    --background-color: #fff;
+    --btn-color: #0987f2;
+    --btn-text-color: #fff;
+    --project-card-bg: #ffffff00;
+    --text-color: #222;
+    --form-text-color: #555;
+    --footer-text-color: #888;
+
+}
+.App{
+    text-align: center;
+}
+
+body{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+
+
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h1,h2,h3 {
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3, p{
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+h1,h2{
+    text-transform: uppercase;
+}
+
+h2, h3{
+    font-size: 20px;
+}
+
+h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 32px;
+}
+p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.sectionTitle{
+    margin-bottom: 30px;
+}
+
+.hover{
+    cursor: pointer;
+}
+  
+.content {
+    position: relative;
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+  
+  .fade-enter {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
